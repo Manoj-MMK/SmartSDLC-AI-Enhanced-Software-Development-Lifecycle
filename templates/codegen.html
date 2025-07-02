@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>AI Code Generator</title></head>
+<body>
+  <h2>Enter Prompt to Generate Code</h2>
+  <form method="post">
+    <textarea name="code_prompt" rows="5" cols="60" placeholder="e.g. Create a Python login system"></textarea><br>
+    <button type="submit">Generate Code</button>
+  </form>
+
+  {% if code %}
+    <h3>Generated Code:</h3>
+    <pre>{{ code }}</pre>
+  {% endif %}
+</body>
+</html>
