@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test Case Generator</title></head>
+<body>
+  <h2>Generate Unit Tests</h2>
+  <form method="post">
+    <textarea name="test_code" rows="10" cols="60" placeholder="Enter code or function here..."></textarea><br>
+    <button type="submit">Generate Tests</button>
+  </form>
+
+  {% if tests %}
+    <h3>Generated Test Cases:</h3>
+    <pre>{{ tests }}</pre>
+  {% endif %}
+</body>
+</html>
