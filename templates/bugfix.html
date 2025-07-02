@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Bug Fixer</title></head>
+<body>
+  <h2>Paste Your Buggy Code</h2>
+  <form method="post">
+    <textarea name="buggy_code" rows="10" cols="60" placeholder="Paste your code here..."></textarea><br>
+    <button type="submit">Fix Code</button>
+  </form>
+
+  {% if fixed %}
+    <h3>Fixed Code:</h3>
+    <pre>{{ fixed }}</pre>
+  {% endif %}
+</body>
+</html>
