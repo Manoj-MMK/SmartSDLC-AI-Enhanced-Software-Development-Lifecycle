@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Requirement Classifier</title>
+</head>
+<body>
+  <h2>Upload Requirements</h2>
+  <form method="post">
+    <textarea name="req_text" rows="10" cols="60" placeholder="Paste requirement text..."></textarea><br>
+    <button type="submit">Classify</button>
+  </form>
+
+  {% if result %}
+    <h3>AI Classification:</h3>
+    <ul>
+      {% for phase in result['AI Classification'] %}
+        <li>{{ phase }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
