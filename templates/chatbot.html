@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>AI Chatbot Assistant</title></head>
+<body>
+  <h2>Ask an SDLC Question</h2>
+  <form method="post">
+    <input type="text" name="query" size="60" placeholder="e.g. What is requirement analysis?">
+    <button type="submit">Ask</button>
+  </form>
+
+  {% if reply %}
+    <h3>AI Response:</h3>
+    <p>{{ reply }}</p>
+  {% endif %}
+</body>
+</html>
