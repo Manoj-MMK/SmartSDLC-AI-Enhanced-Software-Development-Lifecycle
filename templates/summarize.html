@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Code Summarizer</title></head>
+<body>
+  <h2>Code Summarizer</h2>
+  <form method="post">
+    <textarea name="summary_code" rows="10" cols="60" placeholder="Paste source code here..."></textarea><br>
+    <button type="submit">Summarize</button>
+  </form>
+
+  {% if summary %}
+    <h3>Summary:</h3>
+    <p>{{ summary }}</p>
+  {% endif %}
+</body>
+</html>
